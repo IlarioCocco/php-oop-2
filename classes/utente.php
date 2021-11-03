@@ -20,17 +20,23 @@ BONUS:
 Gestite eventuali eccezioni che si possono verificare (es: carta di credito scaduta). -->
 
 <?php
+require __DIR__ . "/Carrello.php";
 
 class Utenti {
     private $nomi;
     private $tipologie;
     private $cdc;
+    public $carrello;
+
+   
 
     public function __construct($_nomi, $_tipologie, $_cdc)
     {   
         $this->nomi = $_nomi;
         $this->tipologie = $_tipologie;
         $this->cdc = $_cdc;
+        $this->carrello = new Carrello();
+        
     }
 
 
