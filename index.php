@@ -6,9 +6,11 @@ require __DIR__ . "/classes/Prodotto.php";
 $utenteUno = new Utenti("Pippo", "Premium", "Master Card");
 $utenteDue = new Utenti("Pluto", "Normal", "Visa Card");
 var_dump($utenteUno);
+var_dump($utenteDue);
 
 // Prodotti
 $prodotto = new Prodotti("audi", "villa", "yatch", "rolex");
+var_dump($prodotto);
 
 
 
