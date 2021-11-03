@@ -1,11 +1,20 @@
 <?php
 
+require __DIR__ . "/classes/Utente.php";
+require __DIR__ . "/classes/Prodotto.php";
+// Utenti
+$utenteUno = new Utenti("Pippo", "Premium", "Master Card");
+$utenteDue = new Utenti("Pluto", "Normal", "Visa Card");
+var_dump($utenteUno);
+
+// Prodotti
+$prodotto = new Prodotti("audi", "villa", "yatch", "rolex");
 
 
 
 ?>
 
-
+ 
 
 <!DOCTYPE html>
 <html lang="en">

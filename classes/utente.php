@@ -18,3 +18,39 @@ $user->insertCreditCard($c);
 
 BONUS:
 Gestite eventuali eccezioni che si possono verificare (es: carta di credito scaduta). -->
+
+<?php
+
+class Utenti {
+    private $nomi;
+    private $tipologie;
+    private $cdc;
+
+    public function __construct($_nomi, $_tipologie, $_cdc)
+    {   
+        $this->nomi = $_nomi;
+        $this->tipologie = $_tipologie;
+        $this->cdc = $_cdc;
+    }
+
+
+    public function getNomi($_nome)
+    {
+        $this->nomi[] = $_nome;
+    }
+
+    public function getTipologie($_tipologia)
+    {
+        $this->tipologie[] = $_tipologia;
+    }
+
+    public function getNome($_cdc_tipo)
+    {   
+        $this->cdc[] = $_cdc_tipo;
+    }
+
+}
+
+
+
+
